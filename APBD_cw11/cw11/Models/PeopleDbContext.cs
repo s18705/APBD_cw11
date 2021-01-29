@@ -37,10 +37,6 @@ namespace cw11.Models
             dictPatient.Add(new Patient { IdPatient = 3, FirstName = "doctor3", LastName = "doctor3", BirthDate = DateTime.Now });
 
             modelBuilder.Entity<Patient>().HasData(dictPatient);
-
-            // ... i tak dalej dla każdej klasy
-
-            // tworzenie wielu PK dla klasy asocjacyjnej
             modelBuilder.Entity<Prescription_Medicament>().HasKey(pm => new { pm.IdMedicament, pm.IdPrescription});
 
 
