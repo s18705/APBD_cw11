@@ -28,7 +28,7 @@ namespace cw11
         {
             services.AddDbContext<PeopleDbContext>(options =>
             {
-                options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18967;Integrated Security=True");
+                options.UseSqlServer("Data Source=db-mssql;Initial Catalog=s18705;Integrated Security=True");
             });
             services.AddControllers();
         }
